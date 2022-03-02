@@ -16,6 +16,10 @@ bntPlay.addEventListener("click", function() {
             square.innerHTML = i;
         
             squareArea.append(square);
+
+            square.addEventListener("click", function() {
+                square.classList.add("square_selected");
+            });
         }
 
     } else if (difficulty == "normal") {
@@ -26,6 +30,10 @@ bntPlay.addEventListener("click", function() {
             square.innerHTML = i;
         
             squareArea.append(square);
+
+            square.addEventListener("click", function() {
+                square.classList.add("square_selected");
+            });
         }
 
     } else if (difficulty == "hard") {
@@ -36,15 +44,14 @@ bntPlay.addEventListener("click", function() {
             square.innerHTML = i;
         
             squareArea.append(square);
-        }
 
+            square.addEventListener("click", function() {
+                square.classList.add("square_selected");
+            });
+        }
+        
     }
 });
 
-
-
-
-// ogni volta che clicco play la pagina si pulisce
-// in base alla difficoltà mi appare la griglia
 
 
