@@ -81,6 +81,11 @@ main {
     border: solid 2px white;
 }
 
+.square_selected {
+    color: white;
+    background: #0047AB;
+}
+
 
 /* FOOTER */
 
