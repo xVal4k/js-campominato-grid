@@ -54,9 +54,27 @@ main {
     justify-content: center;
 }
 
-.box {
+.box_hard {
     width: 10%;
     height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+}
+
+.box_medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+}
+
+.box_easy {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
     display: flex;
     justify-content: center;
     align-items: center;
