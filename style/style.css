@@ -62,21 +62,6 @@ main {
 
 }
 
-.box_easy{
-    width: 10%;
-    height: 10%;
-}
-
-.box_normal {
-    width: calc(100% / 9);
-    height: calc(100% / 9);
-}
-
-.box_hard {
-    width: calc(100% / 7);
-    height: calc(100% / 7);
-}
-
 .square_selected {
     color: white;
     background: #0047AB;
