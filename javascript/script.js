@@ -9,7 +9,6 @@ bntPlay.addEventListener("click", function() {
     let difficulty = selectDifficulty.value;
     let cells;
 
-
     if (difficulty == "easy") {
         cells = 100;
     } else if (difficulty == "normal") {
@@ -18,19 +17,15 @@ bntPlay.addEventListener("click", function() {
         cells = 49;
     }
     
+    let cellsPerRow = Math.sqrt(cells);
+
 
     for (let i = 1; i <= cells; i++) {
         let square = document.createElement("div");
         square.classList.add("box");
         square.innerHTML = i;
-
-        if (difficulty == "easy") {
-            square.classList.add("box_easy");
-        } else if (difficulty == "normal") {
-            square.classList.add("box_normal");
-        } else if ( difficulty == "hard") {
-            square.classList.add("box_hard");
-        }
+        square.style.width = `calc(100% / ${cellsPerRow})`;
+        square.style.height = `calc(100% / ${cellsPerRow})`;
 
         squareArea.append(square);
 
