@@ -29,9 +29,11 @@ bntPlay.addEventListener("click", function() {
 
         squareArea.append(square);
 
-        square.addEventListener("click", function() {
-            square.classList.add("square_selected");
-        });
+        square.addEventListener("click", clicked);
     }
 })
 
+
+function clicked () {
+    this.classList.add("square_selected");
+}
