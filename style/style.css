@@ -54,31 +54,27 @@ main {
     justify-content: center;
 }
 
-.box_hard {
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px white;
+
+}
+
+.box_easy{
     width: 10%;
     height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px white;
 }
 
-.box_medium {
+.box_normal {
     width: calc(100% / 9);
     height: calc(100% / 9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px white;
 }
 
-.box_easy {
+.box_hard {
     width: calc(100% / 7);
     height: calc(100% / 7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px white;
 }
 
 .square_selected {
